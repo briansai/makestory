@@ -1,6 +1,8 @@
+import SideBarMenu from './SideBarMenu';
+
 const Index = () => (
   <div>
-    <p>Hello Next.js, this is your friend Brian from logrocket</p>
+    <SideBarMenu />
   </div>
 );
 export default Index;
