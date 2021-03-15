@@ -5,7 +5,7 @@ const SideBarMenu = () => {
     <Nav className="flex-column bg-dark sidebar" defaultActiveKey="/home">
       <Nav.Link eventKey="link-1" className="text-white text-center link">
         <div>
-          <i class="bi bi-journal-text" />
+          <i width="32" height="32" class="bi bi-journal-text" />
         </div>
         <div>Stories</div>
       </Nav.Link>

@@ -1,12 +1,12 @@
 .sidebar {
-  width: 15%;
+  width: 10%;
+  min-width: 100px;
   height: 100vh;
-  padding-top: 2%;
   box-shadow: 0 5px 10px #888888;
   align-items: center;
   border-right: 1px solid black;
 
   .link {
-    padding: 10%;
+    padding: 25%;
   }
 }
