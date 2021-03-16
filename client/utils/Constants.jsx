@@ -1,7 +1,7 @@
 export const storyColumns = [
-  'New Story',
-  'Prioritized',
-  'In Progress',
-  'Completed',
-  'Deployed',
+  { title: 'New Story', key: 'new-story' },
+  { title: 'Prioritized', key: 'prioritized' },
+  { title: 'In Progress', key: 'in-progress' },
+  { title: 'Completed', key: 'completed' },
+  { title: 'Deployed', key: 'deployed' },
 ];
