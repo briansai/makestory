@@ -1,0 +1,9 @@
+.column {
+  margin-top: 3rem;
+  margin-left: 0.5rem;
+  min-width: 300px;
+
+  &:last-child {
+    margin-right: 3rem;
+  }
+}

@@ -1,0 +1,12 @@
+.main {
+  width: 100%;
+  padding: 0;
+
+  &-row {
+    display: flex;
+
+    .main-column {
+      max-width: 91.65%;
+    }
+  }
+}
