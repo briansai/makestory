@@ -8,7 +8,7 @@ const Index = () => (
     <TopMenu />
     <Container fluid className="main">
       <Row noGutters className="main-row">
-        <Col sm={1}>
+        <Col xs={1}>
           <SideBarMenu />
         </Col>
         <Col xs={9} className="main-column">
