@@ -5,7 +5,7 @@ import Column from './Column';
 import ControlledTabs from './ControlledTabs';
 
 const StoryColumns = () => {
-  const [selectedTab, setSelectedTab] = useState('');
+  const [selectedTab, setSelectedTab] = useState(storyColumns[0].key);
 
   useEffect(() => {
     if (selectedTab) {
