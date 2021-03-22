@@ -1,11 +1,14 @@
-.sidebar {
-  min-width: 100px;
-  height: 100vh;
-  box-shadow: 0 5px 10px #888888;
-  align-items: center;
-  border-right: 1px solid black;
+.side-navbar {
+  padding: 0;
+  .sidebar {
+    min-width: 100px;
+    height: 100vh;
+    box-shadow: 0 5px 10px #888888;
+    align-items: center;
+    border-right: 1px solid black;
 
-  .link {
-    padding: 25%;
+    .link {
+      padding: 25%;
+    }
   }
 }
