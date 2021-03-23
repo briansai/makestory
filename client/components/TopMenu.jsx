@@ -2,11 +2,11 @@ import { Navbar, Form, FormControl, Button } from 'react-bootstrap';
 import { useMediaQuery } from 'react-responsive';
 
 const TopMenu = () => {
-  const isTabletOrMobile = useMediaQuery({ query: '(max-width: 1224px)' });
   return (
     <Navbar expand="lg" bg="dark" variant="dark" className="shadow nav">
       <Navbar.Brand href="#home" className="brand">
-        {isTabletOrMobile ? 'M' : 'MakeStory'}
+        <div className="d-lg-none">M</div>
+        <div className="d-none d-lg-block">MakeStory</div>
       </Navbar.Brand>
       <Form className="mx-auto search-container">
         <FormControl type="text" placeholder="Search" className="sm-2 search" />

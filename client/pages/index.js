@@ -8,10 +8,10 @@ const Index = () => (
     <TopMenu />
     <Container fluid className="main">
       <Row noGutters className="main-row">
-        <Col xs={1}>
+        <Col xs={12} sm={1}>
           <SideBarMenu />
         </Col>
-        <Col xs={9} className="main-column">
+        <Col sm={10} className="main-column">
           <StoryColumns />
         </Col>
       </Row>

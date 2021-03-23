@@ -1,5 +1,10 @@
 .side-navbar {
   padding: 0;
+
+  .navbar-toggler {
+    width: 100%;
+  }
+
   .sidebar {
     min-width: 100px;
     height: 100vh;

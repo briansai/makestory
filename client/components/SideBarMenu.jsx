@@ -2,8 +2,9 @@ import { Navbar, Nav } from 'react-bootstrap';
 
 const SideBarMenu = () => {
   return (
-    <Navbar className="side-navbar">
-      <Navbar.Collapse>
+    <Navbar collapseOnSelect expand="lg" className="side-navbar">
+      <Navbar.Toggle aria-controls="basic-navbar-nav" />
+      <Navbar.Collapse id="basic-navbar-nav">
         <Nav className="flex-column bg-dark sidebar" defaultActiveKey="/home">
           <Nav.Link eventKey="link-1" className="text-white text-center link">
             <div>
