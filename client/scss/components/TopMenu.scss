@@ -17,6 +17,12 @@
     .search {
       border-top-right-radius: 0;
       border-bottom-right-radius: 0;
+
+      @media only screen and (min-device-width: 1224px) {
+        & {
+          width: 500px !important;
+        }
+      }
     }
 
     .search-button {

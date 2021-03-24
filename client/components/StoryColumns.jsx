@@ -13,6 +13,7 @@ const StoryColumns = () => {
       document.querySelector('.row .flex-nowrap').scrollLeft = p.offsetLeft;
     }
   }, [selectedTab]);
+
   return (
     <Container fluid className="story-container">
       <ControlledTabs

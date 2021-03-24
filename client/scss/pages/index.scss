@@ -5,8 +5,10 @@
   &-row {
     display: flex;
 
-    .main-column {
-      max-width: 91.65%;
+    @media only screen and (min-device-width: 1224px) {
+      .main-column {
+        max-width: 91.65%;
+      }
     }
   }
 }
