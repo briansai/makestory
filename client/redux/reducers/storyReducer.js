@@ -28,8 +28,8 @@ export const prioritizedReducer = (
 
 export const inProgressReducer = (
   state = {
-    title: 'Progress',
-    key: 'progress',
+    title: 'In Progress',
+    key: 'in-progress',
     value: [],
   },
   action

@@ -5,11 +5,13 @@ import Column from './Column';
 import ControlledTabs from './ControlledTabs';
 
 const StoryColumns = () => {
-  const newStory = useSelector((state) => state.newStoryReducer);
-  const prioritized = useSelector((state) => state.prioritizedReducer);
-  const inProgress = useSelector((state) => state.inProgressReducer);
-  const completed = useSelector((state) => state.completedReducer);
-  const deployed = useSelector((state) => state.deployedReducer);
+  const {
+    newStoryReducer: newStory,
+    prioritizedReducer: prioritized,
+    inProgressReducer: inProgress,
+    completedReducer: completed,
+    deployedReducer: deployed,
+  } = useSelector((state) => state);
 
   const storyColumns = [newStory, prioritized, inProgress, completed, deployed];
   const [selectedTab, setSelectedTab] = useState(storyColumns[0].key);
