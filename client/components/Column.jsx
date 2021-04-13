@@ -1,16 +1,14 @@
-import { useState } from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
 
 const Column = ({ column }) => {
-  const [columnItems, setColumnItems] = useState([]);
-  const { title, key } = column;
+  const { title, key, value } = column;
 
   return (
     <Col key={key} id={key} className="column">
       <Card>
         <Card.Header className="text-center">{title}</Card.Header>
-        {columnItems.length ? (
-          columnItems.map((item) => {
+        {value.length ? (
+          value.map((item) => {
             return <div>{item}</div>;
           })
         ) : (

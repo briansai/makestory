@@ -1,10 +1,17 @@
-import { useState, findDOMNode, useEffect } from 'react';
+import { useState, useEffect } from 'react';
+import { useSelector } from 'react-redux';
 import { Container, Row } from 'react-bootstrap';
-import { storyColumns } from '../utils/constants';
 import Column from './Column';
 import ControlledTabs from './ControlledTabs';
 
 const StoryColumns = () => {
+  const newStory = useSelector((state) => state.newStoryReducer);
+  const prioritized = useSelector((state) => state.prioritizedReducer);
+  const inProgress = useSelector((state) => state.inProgressReducer);
+  const completed = useSelector((state) => state.completedReducer);
+  const deployed = useSelector((state) => state.deployedReducer);
+
+  const storyColumns = [newStory, prioritized, inProgress, completed, deployed];
   const [selectedTab, setSelectedTab] = useState(storyColumns[0].key);
 
   useEffect(() => {

@@ -1,4 +1,16 @@
 import { combineReducers } from 'redux';
-import { storyReducer } from './storyReducer';
+import {
+  newStoryReducer,
+  prioritizedReducer,
+  inProgressReducer,
+  completedReducer,
+  deployedReducer,
+} from './storyReducer';
 
-export const rootReducer = combineReducers({ storyReducer });
+export const rootReducer = combineReducers({
+  newStoryReducer,
+  prioritizedReducer,
+  inProgressReducer,
+  completedReducer,
+  deployedReducer,
+});
