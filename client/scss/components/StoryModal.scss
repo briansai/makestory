@@ -1,0 +1,25 @@
+.input-group {
+  box-shadow: 0 1px 1px #888888;
+  resize: none;
+}
+
+.title {
+  border: 0;
+  box-shadow: none !important;
+
+  @media only screen and (max-device-width: 1224px) {
+    & {
+      width: 10rem;
+    }
+  }
+
+  @media only screen and (min-device-width: 1224px) {
+    & {
+      width: 45rem;
+    }
+  }
+}
+
+.right-side {
+  border-left: 1px solid rgba(0, 0, 0, 0.125);
+}

@@ -5,3 +5,5 @@ export const storyColumns = [
   { title: 'Completed', key: 'completed' },
   { title: 'Deployed', key: 'deployed' },
 ];
+
+export const severity = ['Light', 'Moderate', 'Severe'];

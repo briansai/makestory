@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Col, Card, Button } from 'react-bootstrap';
-import AddModal from './AddModal';
+import StoryModal from './StoryModal';
 
 const Column = ({ column }) => {
   const { title, key, value } = column;
@@ -35,7 +35,7 @@ const Column = ({ column }) => {
           +
         </Button>
       </Card>
-      <AddModal modal={modal} setModal={setModal} />
+      <StoryModal modal={modal} setModal={setModal} />
     </Col>
   );
 };
