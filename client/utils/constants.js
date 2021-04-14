@@ -6,4 +6,17 @@ export const storyColumns = [
   { title: 'Deployed', key: 'deployed' },
 ];
 
-export const severity = ['Light', 'Moderate', 'Severe'];
+export const severityList = ['Light', 'Moderate', 'Urgent'];
+
+export const typeList = ['Feature', 'Configuration', 'Custom'];
+
+export const inputList = {
+  title: '',
+  description: '',
+  comments: '',
+  project: '',
+  type: '',
+  status: '',
+  severity: '',
+  owner: '',
+};
