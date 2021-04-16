@@ -5,6 +5,7 @@ import {
   inProgressReducer,
   completedReducer,
   deployedReducer,
+  storyReducer,
 } from './storyReducer';
 
 export const rootReducer = combineReducers({
@@ -13,4 +14,5 @@ export const rootReducer = combineReducers({
   inProgressReducer,
   completedReducer,
   deployedReducer,
+  storyReducer,
 });

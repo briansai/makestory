@@ -5,11 +5,9 @@ import StoryModal from './StoryModal';
 const Column = ({ column }) => {
   const { title, key, value } = column;
   const [modal, setModal] = useState(false);
-  const [selectedKey, setSelectedKey] = useState('');
-  const addStory = (e, key) => {
+  const addStory = (e, category) => {
     e.preventDefault();
     setModal(!modal);
-    setSelectedKey(key);
   };
 
   return (
@@ -17,8 +15,9 @@ const Column = ({ column }) => {
       <Card>
         <Card.Header className="text-center">{title}</Card.Header>
         {value.length ? (
-          value.map((item) => {
-            return <div>{item}</div>;
+          value.map((item, idx) => {
+            const { description } = item;
+            return <div key={`${description}-${idx}`}>{description}</div>;
           })
         ) : (
           <div className="no-item">
@@ -26,7 +25,7 @@ const Column = ({ column }) => {
           </div>
         )}
         <Button
-          onClick={(e) => addStory(e, key)}
+          onClick={(e) => addStory(e, title)}
           className="add-button"
           variant="primary"
           size="lg"
